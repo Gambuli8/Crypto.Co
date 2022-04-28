@@ -519,7 +519,7 @@ footer a i:hover{
         margin-left: 75px;
         margin-right: 75px;
         padding: 40px;
-        width: 90%;
+        width: 75%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 50px;
