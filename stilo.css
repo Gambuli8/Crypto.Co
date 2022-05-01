@@ -44,12 +44,23 @@ h1{
     font-size: 80px;
     color: black;
     margin: 200px;
-    display: inline-flexbox;
     align-items: center;
     justify-content: center;
+    text-transform: capitalize;
 }
 
 h2{
+    text-align: center;
+    font-family: 'comfortaa', 'cursive';
+    font-size: 70px;
+    color: black;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+h3{
     text-align: center;
     font-family: 'comfortaa', 'cursive';
     font-size: 35px;
@@ -73,7 +84,6 @@ h2{
     padding: 80px;
     width: 75%;
     height: 500px;
-    display: inline-flexbox;
     align-items: center;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
@@ -182,6 +192,9 @@ h2{
     font-size: 30px;
     color: white;
     margin: 40px;
+}
+.subtitulo{
+    text-transform: uppercase;
 }
 
 .tabla1{
@@ -373,7 +386,7 @@ footer a i:hover{
     h3{
         text-align: center;
         font-family: 'comfortaa', 'cursive';
-        font-size: 25px;
+        font-size: 30px;
         color: white;
         margin: 20px;
         display: flex;
@@ -389,7 +402,7 @@ footer a i:hover{
         border-radius: 15px;
         margin-top: 100px;
         margin-bottom: 50px;
-        margin-left: 50px;
+        margin-left: 60px;
         margin-right: 75px;
         padding: 30px;
         width: 75%;
@@ -516,7 +529,7 @@ footer a i:hover{
         color: white;
         margin-top: 100px;
         margin-bottom: 50px;
-        margin-left: 75px;
+        margin-left: 60px;
         margin-right: 75px;
         padding: 40px;
         width: 75%;
@@ -546,7 +559,7 @@ footer a i:hover{
         color: white;
         margin-top: 100px;
         margin-bottom: 50px;
-        margin-left: 75px;
+        margin-left: 60px;
         margin-right: 75px;
         padding: 40px;
         width: 75%;
