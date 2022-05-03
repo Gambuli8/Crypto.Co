@@ -5,8 +5,8 @@
 }
 
 body{
-    background-image: linear-gradient(to left, #ffd700, #ffc36e, #ffc2ba, #ffd4ef, #ffe9ff, #ffe9ff, #ffe9ff, #ffe9ff, #ffd4ef, #ffc2ba, #ffc36e, #ffd700);
-}
+background-image: linear-gradient(to right, #000000, #2e2e2e, #585859, #878787, #b8b9b9, #b8b9b9, #b8b9b9, #b8b9b9, #878787, #585859, #2e2e2e, #000000);
+}    
 
 html{
     scroll-behavior: smooth;
@@ -75,7 +75,7 @@ h3{
     text-align: center;
     color: white;
     background-color: #000;
-    border:2px solid white;
+    border:2px solid #FFD700;
     border-radius: 15px;
     margin-top: 200px;
     margin-bottom: 100px;
@@ -83,7 +83,7 @@ h3{
     margin-right: 150px;
     padding: 80px;
     width: 75%;
-    height: 500px;
+    height: 510px;
     align-items: center;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
@@ -136,6 +136,10 @@ h3{
     font-size: 20px;
     overflow: auto;
 }
+.coinmarket{
+    background-color: rgb(0, 51, 255);
+    border-radius: 20px;
+}
 
 .seccion3{
     text-align: center;
@@ -148,12 +152,30 @@ h3{
     padding: 100px;
     width: 75%;
     height: 500px;
-    display: inline-flexbox;
     align-items: center;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
     overflow: auto;
+    transform: scale(1);
+    transition: all 4s;
+}
+
+#binance{
+    color: #ffd700;
+}
+.link{
+    background-color: white;
+    border-radius: 10px;
+    color: #000;
+}
+.link:active{
+    background-color: (0, 82, 255);
+    color: black;
+}
+#intro{
+    height: 340px;
+    font-size: 20px;
 }
 
 .seccion4{
@@ -389,9 +411,6 @@ footer a i:hover{
         font-size: 30px;
         color: white;
         margin: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     .seccion{
@@ -404,7 +423,7 @@ footer a i:hover{
         margin-bottom: 50px;
         margin-left: 60px;
         margin-right: 75px;
-        padding: 30px;
+        padding: 20px;
         width: 75%;
         height: 400px;
         display: block;
@@ -427,7 +446,7 @@ footer a i:hover{
         border-radius: 15px;
         margin: auto;
         margin-top: 150px;
-        padding: 80px;
+        padding: 20px;
         width: 90%;
         height: 500px;
         display: inline-flexbox;
@@ -450,7 +469,7 @@ footer a i:hover{
         border-radius: 15px;
         margin: auto;
         margin-top: 150px;
-        padding: 80px;
+        padding: 20px;
         width: 90%;
         height: 500px;
         display: inline-flexbox;
@@ -472,16 +491,27 @@ footer a i:hover{
         border:2px solid white;
         border-radius: 15px;
         margin: auto;
-        margin-top: 150px;
-        padding: 80px;
-        width: 90%;
-        height: 500px;
+        margin-top: 100px;
+        padding: 20px;
         display: block;
         align-items: center;
         justify-content: center;
+        width: 90%;
+        height: 510px;
         font-family: 'Cairo', sans-serif;
         font-size: 16px;
-        overflow: auto;
+        overflow: none;
+    }
+    #binance{
+        color: #ffd700;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+
+    }
+    #intro{
+        height: 270px;
+        font-size: 20px;
     }
     
     .seccion4{
@@ -492,7 +522,7 @@ footer a i:hover{
         border-radius: 15px;
         margin: auto;
         margin-top: 150px;
-        padding: 80px;
+        padding: 20px;
         width: 90%;
         height: 500px;
         display: block;
