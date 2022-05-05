@@ -49,22 +49,21 @@ h1{
     text-transform: capitalize;
 }
 
-h2{
+.h2{
     text-align: center;
     font-family: 'comfortaa', 'cursive';
-    font-size: 70px;
-    color: black;
-    margin: 60px;
-    display: flex;
+    font-size: 40px;
+    color: #000;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
 }
-h3{
+.h3{
     text-align: center;
     font-family: 'comfortaa', 'cursive';
-    font-size: 35px;
-    color: white;
+    font-size: 30px;
+    color: #ffd700;
     margin: 20px;
     display: flex;
     align-items: center;
@@ -89,6 +88,7 @@ h3{
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
     overflow: auto;
+    text-transform: capitalize;
 }
 
 .articulo{
@@ -103,15 +103,16 @@ h3{
     border-radius: 15px;
     margin: auto;
     margin-top: 200px;
-    padding: 80px;
+    padding: 50px;
     width: 75%;
     height: 500px;
-    display: inline-flexbox;
+    display: block;
     align-items: center;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
     overflow: auto;
+    text-transform: capitalize;
 }
 
 #sec1{
@@ -120,13 +121,13 @@ h3{
 
 .seccion2{
     text-align: center;
-    color: black;
+    color: white;
     background-color: #000;
     border:2px solid white;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
-    padding: 100px;
+    padding: 60px;
     width: 75%;
     height: 500px;
     display: inline-flexbox;
@@ -134,11 +135,23 @@ h3{
     justify-content: center;
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
-    overflow: auto;
+    text-transform: capitalize;
 }
 .coinmarket{
     background-color: rgb(0, 51, 255);
     border-radius: 20px;
+}
+.seccion2 a{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #ffd700;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+.seccion2 a:hover{
+    transform: translateX(3);
+    transition: all 4s ease-in;
 }
 
 .seccion3{
@@ -159,6 +172,7 @@ h3{
     overflow: auto;
     transform: scale(1);
     transition: all 4s;
+    text-transform: capitalize;
 }
 .conteiner{
     width: 80%;
@@ -247,16 +261,34 @@ figure img{
     text-align: center;
     font-family: 'Comfortaa', 'cursive';
     font-size: 30px;
-    color: white;
+    color: #ffd700;
     margin: 40px;
+    margin-bottom: 90px;
+    text-transform: capitalize;
 }
 .subtitulo{
     text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+.subtitulo:hover{
+    color: #ffd700;
+    cursor: pointer;
+}
+.tabla{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.tabla:hover{
+    color: #ffd700;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 1s ease;
 }
 
 .tabla1{
     background-color: #000;
-    border: 2px solid black;
+    border: 2px solid #ffd700;
     color: white;
     width: 75%;
     margin-top:200px;
@@ -272,6 +304,7 @@ figure img{
     border-radius: 15px;
     align-items: center;
     justify-content: center;
+    text-transform: capitalize;
 }
 
 .titulo2{
@@ -280,13 +313,15 @@ figure img{
     text-align: center;
     font-family: 'Comfortaa', 'cursive';
     font-size: 30px;
-    color: white;
+    color: #ffd700;
     margin: 40px;
+    margin-bottom: 90px;
+    text-transform: capitalize;
 }
 
 .tabla2{
     background-color: #000;
-    border: 2px solid black;
+    border: 2px solid #ffd700;
     color: white;
     width: 75%;
     margin-top:200px;
@@ -302,64 +337,40 @@ figure img{
     border-radius: 15px;
     align-items: center;
     justify-content: center;
+    text-transform: capitalize;
 }
 
-#contacto{
-    text-align: center;
-    color: white;
-    margin: 10px;
-    padding: 5px;
-    float: inline-start;
-}
-
-#formulario{
-    background-color: #FFD700;
-}
-
-.formu{
-    text-align: center;
-    font-family: 'cairo', 'sans-serif';
-    font-size: 20px;
-    padding: 3px;
-}
-
-.botones{
-    background-color: #5cd4f5;
-    border-radius: 20%;
-}
-
-.botones:hover{
-    color: #000;
-}
-
-footer{
+#footer{
     background: rgba(38, 38, 38, 0.696);
     width: 100%;
-    height: 115px;
+    height: 130px;
     margin-top: 40px;
     text-align: center;
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
     color: white;
+    cursor: pointer;
 }
 
-footer p{
+#footer p{
     text-align: center;
     font-family: 'cairo', 'sans-serif';
-    font-size: 20px;
-
+    font-size: 25px;
 }
 
-footer a{
+#footer a{
     text-align: center;
     display: inline-flex;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
+    padding: 5px;
 }
-footer a i:hover{
+#footer a i:hover{
     color: #FFD700;
     cursor: pointer;
+    transform: rotateY(1turn) scale(1.3);
+    transition: all 1.2s;
 }
 
 .subir{
@@ -410,9 +421,10 @@ footer a i:hover{
     }
     .navbar-collapse{
         flex-grow: 0;
-        font-size: 15px;
+        font-size: 10px;
         margin: 10px;
         float: right;
+        text-transform: capitalize;
     }
     .navbar-dark .navbar-nav .nav-link{
         font-size: 20px;
@@ -507,7 +519,6 @@ footer a i:hover{
         padding: 20px;
         width: 90%;
         height: 500px;
-        display: inline-flexbox;
         align-items: center;
         justify-content: center;
         font-family: 'Cairo', sans-serif;
@@ -617,8 +628,8 @@ footer a i:hover{
         grid-column-end: 3;
         text-align: center;
         font-family: 'Comfortaa', 'cursive';
-        font-size: 30px;
-        color: white;
+        font-size: 23px;
+        color: #ffd700;
         margin: 20px;
         padding: 10px;
     }
@@ -642,14 +653,34 @@ footer a i:hover{
         align-items: center;
         justify-content: center;
     }
+    .subtitulo{
+        text-transform: uppercase;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .subtitulo:hover{
+        color: #ffd700;
+        cursor: pointer;
+    }
+    .tabla{
+        font-size: 14px;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    .tabla:hover{
+        color: #ffd700;
+        cursor: pointer;
+        transform: scale(1.5);
+        transition: all 1s ease;
+    }
     
     .titulo2{
         grid-column-start: 1;
         grid-column-end: 4;
         text-align: center;
         font-family: 'Comfortaa', 'cursive';
-        font-size: 30px;
-        color: white;
+        font-size: 23px;
+        color: #ffd700;
         margin: 40px;
     }
     
@@ -673,38 +704,10 @@ footer a i:hover{
         justify-content: center;
     }
     
-    #contacto{
-        text-align: center;
-        color: white;
-        margin: 10px;
-        padding: 5px;
-        float: inline-start;
-    }
-    
-    #formulario{
-        background-color: #FFD700;
-    }
-    
-    .formu{
-        text-align: center;
-        font-family: 'cairo', 'sans-serif';
-        font-size: 20px;
-        padding: 3px;
-    }
-    
-    .botones{
-        background-color: #5cd4f5;
-        border-radius: 20%;
-    }
-    
-    .botones:hover{
-        color: #000;
-    }
-    
     footer{
         background: rgba(38, 38, 38, 0.696);
         width: 100%;
-        height: 115px;
+        height: 130px;
         margin-top: 40px;
         text-align: center;
         align-items: center;
@@ -717,7 +720,6 @@ footer a i:hover{
         text-align: center;
         font-family: 'cairo', 'sans-serif';
         font-size: 20px;
-    
     }
     
     footer a{
@@ -729,6 +731,8 @@ footer a i:hover{
     footer a i:hover{
         color: #FFD700;
         cursor: pointer;
+        transform: rotateY(1turn) scale(1.3);
+        transition: all 1.2s;
     }
     
     .subir{
