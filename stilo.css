@@ -436,27 +436,27 @@ figure img{
     h1{
         text-align: center;
         font-family: 'Comfortaa', 'cursive';
-        font-size: 50px;
+        font-size: 40px;
         color: black;
         margin: 100px;
         align-items: center;
         justify-content: center;
     }
-    h2{
+    .h2{
         text-align: center;
         font-family: 'Comfortaa', 'cursive';
-        font-size: 50px;
+        font-size: 35px;
         color: black;
         margin: 100px;
         align-items: center;
         justify-content: center;
     }
     
-    h3{
+    .h3{
         text-align: center;
         font-family: 'comfortaa', 'cursive';
-        font-size: 30px;
-        color: white;
+        font-size: 25px;
+        color: #ffd700;
         margin: 20px;
     }
     
@@ -516,9 +516,9 @@ figure img{
         border-radius: 15px;
         margin: auto;
         margin-top: 150px;
-        padding: 13px;
+        padding: 10px;
         width: 90%;
-        height: 500px;
+        height: 530px;
         align-items: center;
         justify-content: center;
         font-family: 'Cairo', sans-serif;
@@ -528,6 +528,9 @@ figure img{
     .coinmarket{
         background-color: rgb(0, 51, 255);
         border-radius: 20px;
+    }
+    .coingecko{
+        margin: 0px;
     }
     
     .seccion3{
@@ -556,7 +559,7 @@ figure img{
     }
     .card{
         width: 80%;
-        height: 500px;
+        height: 550px;
         margin: auto;
         margin-top: 80px;
         border-radius: 6px;
@@ -580,7 +583,7 @@ figure img{
     }
     figure img{
         width: 100%;
-        height: 150px;
+        height: 100px;
         margin-top: 20px;
         margin: auto;
     }
@@ -591,25 +594,6 @@ figure img{
     #intro{
         height: 270px;
         font-size: 20px;
-    }
-    
-    .seccion4{
-        text-align: center;
-        color: white;
-        background-color: #000;
-        border:2px solid white;
-        border-radius: 15px;
-        margin: auto;
-        margin-top: 150px;
-        padding: 20px;
-        width: 90%;
-        height: 500px;
-        display: block;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Cairo', sans-serif;
-        font-size: 16px;
-        overflow: auto;
     }
     
     .info{
@@ -653,7 +637,7 @@ figure img{
     }
     .subtitulo{
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 13px;
         cursor: pointer;
     }
     .subtitulo:hover{
@@ -661,7 +645,7 @@ figure img{
         cursor: pointer;
     }
     .tabla{
-        font-size: 14px;
+        font-size: 12px;
         text-transform: capitalize;
         cursor: pointer;
     }
