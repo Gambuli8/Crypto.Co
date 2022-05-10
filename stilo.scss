@@ -22,22 +22,27 @@ html{
     height: 100px;
     background-color: rgba(48, 47, 47, 0.694);
 }
+
 .navbar-nav{
     float: right;
 }
+
 .navbar-collapse{
     flex-grow: 0;
     font-size: 20px;
     margin: 10px;
     float: right;
 }
+
 .navbar-dark .navbar-nav .nav-link{
     font-size: 25px;
     color: #000;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover{
     color: #ffd700;
 }
+
 h1{
     text-align: center;
     font-family: 'Comfortaa', 'cursive';
@@ -174,6 +179,7 @@ h1{
     transition: all 4s;
     text-transform: capitalize;
 }
+
 .conteiner{
     width: 80%;
     align-items: center;
@@ -390,6 +396,7 @@ figure img{
 .subir i:hover{
     color: #FFD700;
 }
+
 @media only screen and (max-width:768px){
     *{
         padding: 0;
