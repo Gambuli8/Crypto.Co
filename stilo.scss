@@ -1,3 +1,7 @@
+$color1: black;
+$color2: white;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -77,8 +81,8 @@ h1{
 
 .seccion{
     text-align: center;
-    color: white;
-    background-color: #000;
+    color: $color2;
+    background-color: $color1;
     border:2px solid #FFD700;
     border-radius: 15px;
     margin-top: 200px;
@@ -102,9 +106,9 @@ h1{
 
 .seccion1{
     text-align: center;
-    color: white;
-    background-color: #000;
-    border:2px solid white;
+    color: $color2;
+    background-color: $color1;
+    border:2px solid $color2;
     border-radius: 15px;
     margin: auto;
     margin-top: 200px;
@@ -126,9 +130,9 @@ h1{
 
 .seccion2{
     text-align: center;
-    color: white;
-    background-color: #000;
-    border:2px solid white;
+    color: $color2;
+    background-color: $color1;
+    border:2px solid $color2;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
@@ -161,9 +165,9 @@ h1{
 
 .seccion3{
     text-align: center;
-    color: white;
-    background-color: #000;
-    border:2px solid white;
+    color: $color2;
+    background-color: $color1;
+    border:2px solid $color2;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
@@ -192,10 +196,10 @@ h1{
     margin: 50px;
     border-radius: 6px;
     overflow: hidden;
-    background-color: black;
+    background-color: $color1;
     cursor: default;
     transition: all 1s ease;
-    color: white;
+    color: $color2;
     border: 3px solid #ffd700;
 }
 .card:hover{
@@ -233,16 +237,15 @@ figure img{
 
 .seccion4{
     text-align: center;
-    color: white;
-    background-color: #000;
-    border:2px solid white;
+    color: $color2;
+    background-color: $color1;
+    border:2px solid $color2;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
     padding: 100px;
     width: 75%;
     height: 500px;
-    display: inline-flexbox;
     align-items: center;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
@@ -291,9 +294,9 @@ figure img{
 }
 
 .tabla1{
-    background-color: #000;
+    background-color: $color1;
     border: 2px solid #ffd700;
-    color: white;
+    color: $color2;
     width: 75%;
     margin-top:200px;
     margin-bottom: 100px;
@@ -324,9 +327,9 @@ figure img{
 }
 
 .tabla2{
-    background-color: #000;
+    background-color: $color1;
     border: 2px solid #ffd700;
-    color: white;
+    color: $color2;
     width: 75%;
     margin-top:200px;
     margin-bottom: 100px;
