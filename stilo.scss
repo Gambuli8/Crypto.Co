@@ -401,7 +401,72 @@ figure img{
     color: $color3;
 }
 
-@media only screen and (max-width:768px){
+$colores: (
+    //mapa//
+    colo1: red,
+    colo2: blue,
+    colo3: yellow,
+    colo4: blueviolet,
+    );
+
+@each $colo, $borde in $colores {
+    .btn--#{$colo} {
+        background-color: #585859;
+        height: 150px;
+        width: 500px;
+        margin: 8px;
+        border: 3px solid $borde;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 35px;
+        font-family: cursive;
+        box-shadow: 0 0 8px $borde;
+        color: $borde;
+        text-shadow: 6px 0 7px $borde;
+    }
+}
+
+
+.extends{
+    border: 4px solid black;
+    background-color: purple;
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+}
+
+.extends--nuevo{
+    @extend .extends;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: brown;
+    margin: 10px;
+}
+
+@mixin sizes ($height, $widht, $bcolor) {
+    height: $height;
+    width: $widht;
+    background-color: $bcolor;
+}
+
+.box1{
+    @include sizes(400px, 500px, tomato);
+    font-size: 25px;
+    text-align: end;
+}
+
+.box2{
+    @include sizes(400px, 500px, green);
+    text-align: center;
+    font-size: 40px;
+}
+
+@media only screen and (max-width:800px){
     $color1: black;
     $color2: white;
     $color3: #ffd700;
@@ -755,69 +820,4 @@ figure img{
     .subir i:hover{
         color: $color2;
     }
-}
-
-$colores: (
-    //mapa//
-    colo1: red,
-    colo2: blue,
-    colo3: yellow,
-    colo4: blueviolet,
-    );
-
-@each $colo, $borde in $colores {
-    .btn--#{$colo} {
-        background-color: #585859;
-        height: 150px;
-        width: 500px;
-        margin: 8px;
-        border: 3px solid $borde;
-        border-radius: 10px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-size: 35px;
-        font-family: cursive;
-        box-shadow: 0 0 8px $borde;
-        color: $borde;
-        text-shadow: 6px 0 7px $borde;
-    }
-}
-
-
-.extends{
-    border: 4px solid black;
-    background-color: purple;
-    height: 300px;
-    width: 500px;
-    padding: 10px;
-}
-
-.extends--nuevo{
-    @extend .extends;
-    font-size: 40px;
-    text-align: center;
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: brown;
-    margin: 10px;
-}
-
-@mixin sizes ($height, $widht, $bcolor) {
-    height: $height;
-    width: $widht;
-    background-color: $bcolor;
-}
-
-.box1{
-    @include sizes(400px, 500px, tomato);
-    font-size: 25px;
-    text-align: end;
-}
-
-.box2{
-    @include sizes(400px, 500px, green);
-    text-align: center;
-    font-size: 40px;
 }
