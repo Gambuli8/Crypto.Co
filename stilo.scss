@@ -109,7 +109,7 @@ h1{
     text-align: center;
     color: $color2;
     background-color: $color1;
-    border:2px solid $color2;
+    border:2px solid $color3;
     border-radius: 15px;
     margin: auto;
     margin-top: 200px;
@@ -133,7 +133,7 @@ h1{
     text-align: center;
     color: $color2;
     background-color: $color1;
-    border:2px solid $color2;
+    border:2px solid $color3;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
@@ -168,7 +168,7 @@ h1{
     text-align: center;
     color: $color2;
     background-color: $color1;
-    border:2px solid $color2;
+    border:2px solid $color3;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
@@ -194,7 +194,8 @@ h1{
 .card{
     width: 40%;
     height: 500px;
-    margin: 50px;
+    margin: 40px;
+    padding: 0;
     border-radius: 6px;
     overflow: hidden;
     background-color: $color1;
@@ -202,6 +203,9 @@ h1{
     transition: all 1s ease;
     color: $color2;
     border: 3px solid $color3;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 .card:hover{
     transform: translateY(-3%);
@@ -212,12 +216,33 @@ figure{
     justify-content: center;
     margin-top: 10px;
 }
-figure img{
-    width: 80%;
-    height: 150px;
+
+.binance{
+    padding-top: 10px;
+    width: 100%;
+    height: 130px;
 }
+
+#coinbase{
+    padding-top: 20px;
+    width: 70%;
+    height: 100px;
+}
+
+#crypto{
+    padding-top: 10px;
+    width: 100%;
+    height: 190px;
+}
+
+#ftx{
+    padding-top: 30px;
+    width: 70%;
+    height: 170px;
+}
+
 .contenido{
-    margin: 30px;
+    margin: 20px;
 }
 
 #binance{
@@ -240,7 +265,7 @@ figure img{
     text-align: center;
     color: $color2;
     background-color: $color1;
-    border:2px solid $color2;
+    border:2px solid $color3;
     border-radius: 15px;
     margin: auto;
     margin-top:200px;
@@ -351,7 +376,7 @@ figure img{
 #footer{
     background: rgba(38, 38, 38, 0.696);
     width: 100%;
-    height: 130px;
+    height: 100px;
     margin-top: 40px;
     text-align: center;
     align-items: center;
@@ -489,14 +514,17 @@ $colores: (
         width: 55px;
         height: 55px;
     }
+
     .navbar{
         width: 100%;
         height: 80px;
         background-color: rgba(48, 47, 47, 0.694);
     }
+
     .navbar-nav{
         float: right;
     }
+
     .navbar-collapse{
         flex-grow: 0;
         font-size: 10px;
@@ -504,13 +532,16 @@ $colores: (
         float: right;
         text-transform: capitalize;
     }
+
     .navbar-dark .navbar-nav .nav-link{
         font-size: 20px;
         color: $color1;
     }
+
     .navbar-dark .navbar-nav .nav-link:hover{
         color: $color3;
     }
+
     h1{
         text-align: center;
         font-family: 'Comfortaa', 'cursive';
@@ -520,6 +551,7 @@ $colores: (
         align-items: center;
         justify-content: center;
     }
+
     .h2{
         text-align: center;
         font-family: 'Comfortaa', 'cursive';
@@ -602,6 +634,7 @@ $colores: (
         font-size: 16px;
         overflow: none;
     }
+
     .seccion2 a{
         text-decoration: none;
         border-radius: 10px;
@@ -615,6 +648,7 @@ $colores: (
         background-color: rgb(0, 51, 255);
         border-radius: 20px;
     }
+
     .coingecko{
         margin: 0px;
     }
@@ -636,6 +670,7 @@ $colores: (
         font-size: 16px;
         overflow: none;
     }
+
     .conteiner{
         width: 80%;
         display: flex;
@@ -643,10 +678,10 @@ $colores: (
         justify-content: center;
         max-width: 1100px;
     }
+
     .card{
         width: 80%;
         height: 550px;
-        margin: auto;
         margin-top: 80px;
         border-radius: 6px;
         overflow: none;
@@ -659,18 +694,38 @@ $colores: (
         align-items: center;
         justify-content: center;
     }
+
     .card:hover{
         transform: translateY(-3%);
     }
+
     figure{
         text-align: center;
+        align-items: center;
+        justify-content: center;
+
     }
-    figure img{
+    
+    .binance{
         width: 100%;
-        height: 100px;
-        margin-top: 20px;
-        margin: auto;
+        height: 150px;
     }
+    
+    #coinbase{
+        width: 74%;
+        height: 100px;
+    }
+    
+    #crypto{
+        width: 100%;
+        height: 200px;
+    }
+    
+    #ftx{
+        width: 70%;
+        height: 200px;
+    }
+
     .contenido{
         margin: 20px;
     }
@@ -774,7 +829,7 @@ $colores: (
     #footer{
         background: rgba(38, 38, 38, 0.696);
         width: 100%;
-        height: 113px;
+        height: 100px;
         text-align: center;
         align-items: center;
         justify-content: center;
