@@ -1,12 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#2e2e2e), color-stop(#585859), color-stop(#878787), color-stop(#b8b9b9), color-stop(#b8b9b9), color-stop(#b8b9b9), color-stop(#b8b9b9), color-stop(#878787), color-stop(#585859), color-stop(#2e2e2e), to(#000000));
   background-image: linear-gradient(to right, #000000, #2e2e2e, #585859, #878787, #b8b9b9, #b8b9b9, #b8b9b9, #b8b9b9, #878787, #585859, #2e2e2e, #000000);
 }
 
@@ -14,6 +13,19 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #ffd700;
+  border-radius: 10px;
+}
 .logo {
   border: 0px;
   width: 70px;
@@ -31,9 +43,7 @@ html {
 }
 
 .navbar-collapse {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  flex-grow: 0;
   font-size: 20px;
   margin: 10px;
   float: right;
@@ -50,49 +60,35 @@ html {
 
 h1 {
   text-align: center;
-  font-family: 'Comfortaa', 'cursive';
+  font-family: "Comfortaa", "cursive";
   font-size: 80px;
   color: black;
   margin: 200px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: capitalize;
 }
 
 .h2 {
   text-align: center;
-  font-family: 'comfortaa', 'cursive';
+  font-family: "comfortaa", "cursive";
   font-size: 40px;
   color: black;
   margin-top: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: capitalize;
 }
 
 .h3 {
   text-align: center;
-  font-family: 'comfortaa', 'cursive';
+  font-family: "comfortaa", "cursive";
   font-size: 30px;
   color: #ffd700;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .seccion {
@@ -108,13 +104,9 @@ h1 {
   padding: 80px;
   width: 75%;
   height: 510px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Cairo', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   overflow: auto;
   text-transform: capitalize;
@@ -136,13 +128,9 @@ h1 {
   width: 75%;
   height: 500px;
   display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Cairo', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   overflow: auto;
   text-transform: capitalize;
@@ -164,19 +152,15 @@ h1 {
   width: 75%;
   height: 500px;
   display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Cairo', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   text-transform: capitalize;
 }
 
 .coinmarket {
-  background-color: #0033ff;
+  background-color: rgb(0, 51, 255);
   border-radius: 20px;
 }
 
@@ -190,9 +174,7 @@ h1 {
 }
 
 .seccion2 a:hover {
-  -webkit-transform: translateX(3);
-          transform: translateX(3);
-  -webkit-transition: all 4s ease-in;
+  transform: translateX(3);
   transition: all 4s ease-in;
 }
 
@@ -207,30 +189,20 @@ h1 {
   padding: 100px;
   width: 75%;
   height: 500px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Cairo', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   overflow: auto;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 4s;
+  transform: scale(1);
   transition: all 4s;
   text-transform: capitalize;
 }
 
 .conteiner {
   width: 80%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   max-width: 1100px;
 }
 
@@ -243,34 +215,22 @@ h1 {
   overflow: hidden;
   background-color: black;
   cursor: default;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   color: white;
   border: 3px solid #ffd700;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
 }
 
 .card:hover {
-  -webkit-transform: translateY(-3%);
-          transform: translateY(-3%);
+  transform: translateY(-3%);
 }
 
 figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -310,18 +270,12 @@ figure {
   height: 340px;
   font-size: 30px;
   margin: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: black;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .seccion4 {
@@ -335,13 +289,9 @@ figure {
   padding: 100px;
   width: 75%;
   height: 500px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Cairo', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
   font-size: 20px;
   overflow: auto;
 }
@@ -359,7 +309,7 @@ figure {
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  font-family: 'Comfortaa', 'cursive';
+  font-family: "Comfortaa", "cursive";
   font-size: 30px;
   color: #ffd700;
   margin: 40px;
@@ -386,9 +336,7 @@ figure {
 .tabla:hover {
   color: #ffd700;
   cursor: pointer;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: all 1s ease;
+  transform: scale(1.5);
   transition: all 1s ease;
 }
 
@@ -402,20 +350,14 @@ figure {
   margin-left: 150px;
   margin-right: 150px;
   padding: 100px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-rows: 50px;
   text-align: center;
-  font-family: 'Comfortaa', 'cursive';
+  font-family: "Comfortaa", "cursive";
   border-radius: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: capitalize;
 }
 
@@ -423,7 +365,7 @@ figure {
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: center;
-  font-family: 'Comfortaa', 'cursive';
+  font-family: "Comfortaa", "cursive";
   font-size: 30px;
   color: #ffd700;
   margin: 40px;
@@ -441,20 +383,14 @@ figure {
   margin-left: 150px;
   margin-right: 150px;
   padding: 100px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 50px;
   text-align: center;
-  font-family: 'Comfortaa', 'cursive';
+  font-family: "Comfortaa", "cursive";
   border-radius: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: capitalize;
 }
 
@@ -464,12 +400,8 @@ figure {
   height: 100px;
   margin-top: 40px;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-transform: capitalize;
   color: white;
   cursor: pointer;
@@ -477,14 +409,12 @@ figure {
 
 #footer p {
   text-align: center;
-  font-family: 'cairo', 'sans-serif';
+  font-family: "cairo", "sans-serif";
   font-size: 25px;
 }
 
 #footer a {
   text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   text-decoration: none;
   font-size: 35px;
@@ -494,9 +424,7 @@ figure {
 #footer a i:hover {
   color: #ffd700;
   cursor: pointer;
-  -webkit-transform: rotateY(1turn) scale(1.3);
-          transform: rotateY(1turn) scale(1.3);
-  -webkit-transition: all 1.2s;
+  transform: rotateY(1turn) scale(1.3);
   transition: all 1.2s;
 }
 
@@ -511,8 +439,7 @@ figure {
   text-align: center;
   line-height: 20px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px #ffd700;
-          box-shadow: 0 0 10px #ffd700;
+  box-shadow: 0 0 10px #ffd700;
 }
 
 .subir i {
@@ -523,217 +450,82 @@ figure {
   color: #ffd700;
 }
 
-.btn--colo1 {
-  background-color: #585859;
-  height: 150px;
-  width: 500px;
-  margin: 8px;
-  border: 3px solid red;
-  border-radius: 10px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 35px;
-  font-family: cursive;
-  -webkit-box-shadow: 0 0 8px red;
-          box-shadow: 0 0 8px red;
-  color: red;
-  text-shadow: 6px 0 7px red;
-}
-
-.btn--colo2 {
-  background-color: #585859;
-  height: 150px;
-  width: 500px;
-  margin: 8px;
-  border: 3px solid blue;
-  border-radius: 10px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 35px;
-  font-family: cursive;
-  -webkit-box-shadow: 0 0 8px blue;
-          box-shadow: 0 0 8px blue;
-  color: blue;
-  text-shadow: 6px 0 7px blue;
-}
-
-.btn--colo3 {
-  background-color: #585859;
-  height: 150px;
-  width: 500px;
-  margin: 8px;
-  border: 3px solid yellow;
-  border-radius: 10px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 35px;
-  font-family: cursive;
-  -webkit-box-shadow: 0 0 8px yellow;
-          box-shadow: 0 0 8px yellow;
-  color: yellow;
-  text-shadow: 6px 0 7px yellow;
-}
-
-.btn--colo4 {
-  background-color: #585859;
-  height: 150px;
-  width: 500px;
-  margin: 8px;
-  border: 3px solid blueviolet;
-  border-radius: 10px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 35px;
-  font-family: cursive;
-  -webkit-box-shadow: 0 0 8px blueviolet;
-          box-shadow: 0 0 8px blueviolet;
-  color: blueviolet;
-  text-shadow: 6px 0 7px blueviolet;
-}
-
-.extends, .extends--nuevo {
-  border: 4px solid black;
-  background-color: purple;
-  height: 300px;
-  width: 500px;
-  padding: 10px;
-}
-
-.extends--nuevo {
-  font-size: 40px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: brown;
-  margin: 10px;
-}
-
-.box1 {
-  height: 400px;
-  width: 500px;
-  background-color: tomato;
-  font-size: 25px;
-  text-align: end;
-}
-
-.box2 {
-  height: 400px;
-  width: 500px;
-  background-color: green;
-  text-align: center;
-  font-size: 40px;
-}
-
 @media only screen and (max-width: 800px) {
   * {
     padding: 0;
     margin: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
+
   body {
-    background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#2e2e2e), color-stop(#585859), color-stop(#878787), color-stop(#b8b9b9), color-stop(#b8b9b9), color-stop(#b8b9b9), color-stop(#b8b9b9), color-stop(#878787), color-stop(#585859), color-stop(#2e2e2e), to(#000000));
     background-image: linear-gradient(to right, #000000, #2e2e2e, #585859, #878787, #b8b9b9, #b8b9b9, #b8b9b9, #b8b9b9, #878787, #585859, #2e2e2e, #000000);
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   .logo {
     border: 0px;
     width: 55px;
     height: 55px;
   }
+
   .navbar {
     width: 100%;
     height: 80px;
     background-color: rgba(48, 47, 47, 0.694);
   }
+
   .navbar-nav {
     float: right;
   }
+
   .navbar-collapse {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
     font-size: 10px;
     margin: 10px;
     float: right;
     text-transform: capitalize;
   }
+
   .navbar-dark .navbar-nav .nav-link {
     font-size: 20px;
     color: black;
   }
+
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffd700;
   }
+
   h1 {
     text-align: center;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: "Comfortaa", "cursive";
     font-size: 30px;
     color: black;
     margin: 70px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .h2 {
     text-align: center;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: "Comfortaa", "cursive";
     font-size: 23px;
     color: black;
     margin: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .h3 {
     text-align: center;
-    font-family: 'comfortaa', 'cursive';
+    font-family: "comfortaa", "cursive";
     font-size: 20px;
     color: #ffd700;
     margin: 20px;
   }
+
   .seccion {
     text-align: center;
     color: white;
@@ -748,19 +540,17 @@ figure {
     width: 75%;
     height: 400px;
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-family: 'Cairo', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
     font-size: 16px;
     overflow: auto;
   }
+
   .articulo {
     color: white;
   }
+
   .seccion1 {
     text-align: center;
     color: white;
@@ -772,19 +562,17 @@ figure {
     padding: 20px;
     width: 90%;
     height: 500px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-family: 'Cairo', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
     font-size: 14px;
     overflow: auto;
   }
+
   #sec1 {
     margin-top: 300px;
   }
+
   .seccion2 {
     text-align: center;
     color: white;
@@ -796,16 +584,13 @@ figure {
     padding: 10px;
     width: 90%;
     height: 570px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-family: 'Cairo', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cairo", sans-serif;
     font-size: 16px;
     overflow: none;
   }
+
   .seccion2 a {
     text-decoration: none;
     border-radius: 10px;
@@ -814,13 +599,16 @@ figure {
     font-size: 16px;
     font-family: cursive;
   }
+
   .coinmarket {
-    background-color: #0033ff;
+    background-color: rgb(0, 51, 255);
     border-radius: 20px;
   }
+
   .coingecko {
     margin: 0px;
   }
+
   .seccion3 {
     text-align: center;
     color: white;
@@ -830,31 +618,23 @@ figure {
     margin: auto;
     margin-top: 100px;
     padding: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     height: 510px;
-    font-family: 'Cairo', sans-serif;
+    font-family: "Cairo", sans-serif;
     font-size: 16px;
     overflow: none;
   }
+
   .conteiner {
     width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     max-width: 1100px;
   }
+
   .card {
     width: 80%;
     height: 550px;
@@ -863,73 +643,73 @@ figure {
     overflow: none;
     background-color: black;
     cursor: default;
-    -webkit-transition: all 1s ease;
     transition: all 1s ease;
     color: white;
     border: 3px solid #ffd700;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .card:hover {
-    -webkit-transform: translateY(-3%);
-            transform: translateY(-3%);
+    transform: translateY(-3%);
   }
+
   figure {
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .binance {
     width: 100%;
     height: 150px;
   }
+
   #coinbase {
     width: 74%;
     height: 100px;
   }
+
   #crypto {
     width: 100%;
     height: 200px;
   }
+
   #ftx {
     width: 70%;
     height: 200px;
   }
+
   .contenido {
     margin: 20px;
   }
+
   #intro {
     height: 270px;
     font-size: 20px;
   }
+
   .info {
     text-decoration: none;
     color: #ffd700;
   }
+
   .info:hover {
     color: white;
   }
+
   .titulo1 {
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: "Comfortaa", "cursive";
     font-size: 20px;
     color: #ffd700;
     margin: 20px;
     padding: 8px;
   }
+
   .tabla1 {
     background-color: black;
     border: 2px solid #ffd700;
@@ -940,53 +720,51 @@ figure {
     margin-right: 85px;
     padding: 40px;
     width: 75%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: 50px;
     text-align: center;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: "Comfortaa", "cursive";
     border-radius: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .subtitulo {
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
     padding: 5px;
   }
+
   .subtitulo:hover {
     color: #ffd700;
     cursor: pointer;
   }
+
   .tabla {
     font-size: 13px;
     text-transform: capitalize;
     cursor: pointer;
   }
+
   .tabla:hover {
     color: #ffd700;
     cursor: pointer;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    -webkit-transition: all 1s ease;
+    transform: scale(1.5);
     transition: all 1s ease;
   }
+
   .titulo2 {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: "Comfortaa", "cursive";
     font-size: 20px;
     color: #ffd700;
     margin: 40px;
   }
+
   .tabla2 {
     background-color: black;
     border: 2px solid #ffd700;
@@ -997,56 +775,47 @@ figure {
     margin-right: 85px;
     padding: 40px;
     width: 75%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 50px;
     text-align: center;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: "Comfortaa", "cursive";
     border-radius: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   #footer {
     background: rgba(38, 38, 38, 0.696);
     width: 100%;
     height: 100px;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     text-transform: capitalize;
     color: white;
   }
+
   #footer p {
     text-align: center;
-    font-family: 'cairo', 'sans-serif';
+    font-family: "cairo", "sans-serif";
     font-size: 20px;
   }
+
   #footer a {
     text-align: center;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     text-decoration: none;
     font-size: 33px;
   }
+
   #footer a i:hover {
     color: #ffd700;
     cursor: pointer;
-    -webkit-transform: rotateY(1turn) scale(1.1);
-            transform: rotateY(1turn) scale(1.1);
-    -webkit-transition: all 1.2s;
+    transform: rotateY(1turn) scale(1.1);
     transition: all 1.2s;
   }
+
   .subir {
     height: 40px;
     width: 40px;
@@ -1058,14 +827,16 @@ figure {
     text-align: center;
     line-height: 20px;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 10px #ffd700;
-            box-shadow: 0 0 10px #ffd700;
+    box-shadow: 0 0 10px #ffd700;
   }
+
   .subir i {
     color: white;
   }
+
   .subir i:hover {
     color: white;
   }
 }
+
 /*# sourceMappingURL=stilo.css.map */
