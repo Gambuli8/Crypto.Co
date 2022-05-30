@@ -4,28 +4,29 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-image: linear-gradient(to right, #000000, #2e2e2e, #585859, #878787, #b8b9b9, #b8b9b9, #b8b9b9, #b8b9b9, #878787, #585859, #2e2e2e, #000000);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  border: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffd700;
+  border-radius: 10px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
-  width: 12px;
-}
-
-::-webkit-scrollbar-track{
-  border: 2px solid #000;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb{
-  background-color: #ffd700;
-  border-radius: 10px;
-}
 .logo {
   border: 0px;
   width: 70px;
@@ -461,6 +462,21 @@ figure {
     background-image: linear-gradient(to right, #000000, #2e2e2e, #585859, #878787, #b8b9b9, #b8b9b9, #b8b9b9, #b8b9b9, #878787, #585859, #2e2e2e, #000000);
   }
 
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: black;
+  }
+
+  ::-webkit-scrollbar-track {
+    border: transparent;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffd700;
+    border-radius: 10px;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -538,7 +554,7 @@ figure {
     margin-right: 85px;
     padding: 20px;
     width: 75%;
-    height: 400px;
+    height: 420px;
     display: block;
     align-items: center;
     justify-content: center;
@@ -561,7 +577,7 @@ figure {
     margin-top: 150px;
     padding: 20px;
     width: 90%;
-    height: 500px;
+    height: 540px;
     align-items: center;
     justify-content: center;
     font-family: "Cairo", sans-serif;
@@ -583,7 +599,7 @@ figure {
     margin-top: 150px;
     padding: 10px;
     width: 90%;
-    height: 570px;
+    height: 500px;
     align-items: center;
     justify-content: center;
     font-family: "Cairo", sans-serif;
